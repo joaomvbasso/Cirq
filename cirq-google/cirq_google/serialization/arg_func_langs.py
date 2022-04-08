@@ -43,7 +43,7 @@ FLOAT_ARG_LIKE = Union[float, sympy.Symbol, sympy.Add, sympy.Mul]
 
 # Types for comparing floats
 # Includes sympy types.  Needed for arg parsing.
-FLOAT_TYPES = (float, int, sympy.Integer, sympy.Float, sympy.Rational, sympy.NumberSymbol)
+FLOAT_TYPES = (float, int, np.int, sympy.Integer, sympy.Float, sympy.Rational, sympy.NumberSymbol)
 
 # Supported function languages in order from least to most flexible.
 # Clients should use the least flexible language they can, to make it easier

@@ -36,6 +36,9 @@ from cirq_google.api import v2
     [
         ('', 1.0, {'arg_value': {'float_value': 1.0}}),
         ('', 1, {'arg_value': {'float_value': 1.0}}),
+        ('', np.int64(1), {'arg_value': {'float_value': 1.0}}),
+        ('', np.uint64(1), {'arg_value': {'float_value': 1.0}}),
+        ('', np.float64(1), {'arg_value': {'float_value': 1.0}}),
         ('', 'abc', {'arg_value': {'string_value': 'abc'}}),
         ('', [True, False], {'arg_value': {'bool_values': {'values': [True, False]}}}),
         ('', sympy.Symbol('x'), {'symbol': 'x'}),

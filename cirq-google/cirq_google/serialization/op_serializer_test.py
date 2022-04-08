@@ -69,8 +69,11 @@ def get_val(op):
 
 TEST_CASES = (
     (float, 1.0, {'arg_value': {'float_value': 1.0}}),
-    (str, 'abc', {'arg_value': {'string_value': 'abc'}}),
     (float, 1, {'arg_value': {'float_value': 1.0}}),
+    (float, np.int64(1), {'arg_value': {'float_value': 1.0}}),
+    (float, np.uint64(1), {'arg_value': {'float_value': 1.0}}),
+    (float, np.float64(1), {'arg_value': {'float_value': 1.0}}),
+    (str, 'abc', {'arg_value': {'string_value': 'abc'}}),
     (List[bool], [True, False], {'arg_value': {'bool_values': {'values': [True, False]}}}),
     (List[bool], (True, False), {'arg_value': {'bool_values': {'values': [True, False]}}}),
     (
